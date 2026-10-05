@@ -1,6 +1,7 @@
 # Pokémon Platinum ES Casino Patcher
 
 Restaura las tragaperras del casino de Ciudad Rocavelo en **Pokémon Platino, edición española**. Acepta una ROM `.nds` o un `.zip` con una sola ROM. Se aplica localmente, sin subir archivos a ningún servicio.
+
 <img width="1280" height="1112" alt="gihubsing" src="https://github.com/user-attachments/assets/017b6499-6a80-49fe-9779-0c2735fc32d2" />
 
 El proyecto contiene el parche BPS y el código del parcheador. Necesitas aportar tu propia ROM original.
