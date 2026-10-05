@@ -4,6 +4,9 @@ Restaura las tragaperras del casino de Ciudad Rocavelo en **Pokémon Platino, ed
 
 El proyecto contiene el parche BPS y el código del parcheador. Necesitas aportar tu propia ROM original.
 
+<img width="1280" height="1112" alt="imagen" src="https://github.com/user-attachments/assets/2057d627-f57c-4c4b-8cc4-263891b12e4b" />
+
+
 ## Uso con ventana
 
 Instala Python 3.10 o posterior con Tkinter (incluido en el instalador habitual de Python para Windows). Descarga el proyecto completo y ejecuta:
