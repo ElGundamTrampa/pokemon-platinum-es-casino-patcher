@@ -9,17 +9,32 @@ El proyecto contiene el parche BPS y el código del parcheador. Necesitas aporta
 
 ## Uso con ventana
 
+### Windows: ejecutable (sin instalar Python)
+
+**No necesitas tener Python instalado para usar `PlatinumCasinoPatcher.exe`.** El ejecutable incluye todo lo necesario.
+
+1. Descarga `PlatinumCasinoPatcher-windows.zip` desde [Releases](https://github.com/ElGundamTrampa/pokemon-platinum-es-casino-patcher/releases/latest).
+2. Descomprime el ZIP en una carpeta.
+3. Abre `PlatinumCasinoPatcher.exe`.
+4. Pulsa **Seleccionar ROM y restaurar casino** y elige tu `.nds` o `.zip` original.
+
+La salida se guarda en una carpeta `casino-restaurado` junto al archivo de entrada. Conserva el nombre de la ROM interna del ZIP para facilitar el uso de partidas existentes. Si el destino ya existe, el parcheador se detiene.
+
+### Código fuente: requiere Python
+
 Instala Python 3.10 o posterior con Tkinter (incluido en el instalador habitual de Python para Windows). Descarga el proyecto completo y ejecuta:
 
 ```console
 python casino_patcher.py
 ```
 
-En Windows también puedes abrir `Iniciar parcheador.bat`. Pulsa **Seleccionar ROM y restaurar casino** y elige el `.nds` o `.zip` original. La salida se guarda en una carpeta `casino-restaurado` junto al archivo de entrada. Conserva el nombre de la ROM interna del ZIP para facilitar el uso de partidas existentes. Si el destino ya existe, el parcheador se detiene.
+En Windows también puedes abrir `Iniciar parcheador.bat`. **El `.bat` y los archivos `.py` sí requieren Python instalado**, a diferencia del `.exe`. La ventana y el funcionamiento son los mismos.
 
 Para generar un ejecutable de Windows sin instalar Python en el equipo de destino, utiliza el flujo manual **Windows executable** de GitHub Actions. Su artefacto incluye `PlatinumCasinoPatcher.exe`: descomprime la descarga y abre ese archivo para usar la ventana. También puedes aplicar el BPS con otro parcheador compatible.
 
 ## Uso por comandos
+
+Estos ejemplos ejecutan el código fuente y requieren Python 3.10 o posterior:
 
 ```console
 python casino_patcher.py "Pokemon - Platinum Version_OG.zip"
