@@ -148,6 +148,7 @@ def launch_gui() -> int:
             return
         working = True
         button.configure(state="disabled")
+        progress.configure(mode="indeterminate", value=0)
         progress.start()
 
         def worker() -> None:
@@ -168,6 +169,7 @@ def launch_gui() -> int:
                 else:
                     working = False
                     progress.stop()
+                    progress.configure(mode="determinate", value=0)
                     button.configure(state="normal")
                     if kind == "done":
                         info.set(f"ROM restaurada:\n{value}")
@@ -191,7 +193,7 @@ def launch_gui() -> int:
 
     button = ttk.Button(frame, text="Seleccionar ROM y restaurar casino", command=choose)
     button.pack(anchor="w", pady=8)
-    progress = ttk.Progressbar(frame, mode="indeterminate")
+    progress = ttk.Progressbar(frame, mode="determinate", value=0)
     progress.pack(fill="x", pady=12)
     ttk.Label(frame, text="Conserva el nombre y la ruta del juego al instalarlo.\n"
               "Haz una copia de tu .sav antes de sustituir la ROM.", wraplength=550).pack(anchor="w")
