@@ -1,0 +1,16 @@
+# Private game files and saves must never be committed.
+*.nds
+*.zip
+*.7z
+*.sav
+*.srm
+*.dsv
+*.ml[0-9]*
+*.respaldo
+casino-restaurado/
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.spec
